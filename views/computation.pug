@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 RESULTS.
+
+    - var x = Math.floor(Math.random() * 10);
+    - var y = Math.floor(Math.random() * 10);
+    - var res1 = Math.log2 (x);
+    - var res2 = Math.cosh (y);
+    - var res3 = Math.floor(x)
+
+  p Math.log2(#{x}) is #{res1}
+  p Math.cosh(#{y}) is #{res2}
+  p Math.floor(#{x}) is #{res3}
